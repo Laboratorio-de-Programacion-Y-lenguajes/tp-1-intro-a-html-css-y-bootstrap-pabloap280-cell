@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog Personal</title>
-    <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Mi Blog Personal - Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
-            <!-- TODO: agregar toggler y nav-items -->
+            <a class="navbar-brand" href="index.html">Mi Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero section -->
-    <header class="bg-gradient text-white py-5">
-        <div class="container text-center">
-            <h1 class="display-4">Bienvenido a Mi Blog</h1>
-            <p class="lead">Historias, tecnología y reflexiones</p>
-        </div>
-    </header>
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Mis Últimas Publicaciones</h1>
 
-    <!-- Main: listado de artículos -->
-    <main class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Artículos Recientes</h2>
-
-            <!-- Grid de tarjetas (COMPLETAR: 3+ artículos) -->
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="assets/images/article-1.jpg" class="card-img-top" alt="Artículo 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Primer Artículo</h5>
-                            <p class="card-text text-muted">Autor: Tu Nombre</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                            <a href="#" class="btn btn-primary btn-sm">Leer más</a>
-                        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/16.5.1/img/profileicon/6622.png"
+                        class="card-img-top" alt="Ornn">
+                    <div class="card-body">
+                        <h2 class="card-title">Ornn, El Fuego Debajo de la Montaña</h2>
+                            <p class="card-text">Es uno de los semidioses más antiguos de Freljord. A diferencia de sus
+                                hermanos (como Volibear o Anivia), Ornn valora la soledad, el trabajo duro y el silencio
+                                por encima de la adoración o la guerra.</p>
+                            <a href="https://www.leagueoflegends.com/es-es/champions/ornn/" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-primary">Leer más</a>
                     </div>
                 </div>
-                <!-- TODO: agregar 2 más -->
             </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdx8gkCeQdh2GGNIH2jFJrNEFAbHkBig9_bg&s"
+                        class="card-img-top" alt="Mordekaiser">
+                    <div class="card-body">
+                        <h2 class="card-title">Mordekaiser, el Renacido de Hierro</h2>
+                        <p class="card-text">Es uno de los villanos más imponentes y aterradores de todo el universo de
+                            Runaterra. Si Ornn es la voluntad de la creación, Mordekaiser es la voluntad de la
+                            dominación absoluta, incluso después de la muerte.</p>
+                        <a href="https://www.leagueoflegends.com/es-mx/champions/mordekaiser/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVu6xUX3cmHJaoBDHBKs0-NagBRw5QQ7IvQQ&s"
+                        class="card-img-top" alt="Teemo">
+                    <div class="card-body">
+                        <h2 class="card-title">Teemo, el Explorador Veloz</h2>
+                        <p class="card-text">No te dejes engañar por su apariencia de peluche; en la comunidad de League
+                            of Legends, Teemo es conocido como "el Satán de la Grieta" por lo frustrante que puede ser
+                            jugar contra él.</p>
+                        <a href="https://www.leagueoflegends.com/es-es/champions/teemo/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
-            <!-- TODO: agregar redes sociales -->
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
